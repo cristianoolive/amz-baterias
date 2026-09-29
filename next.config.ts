@@ -72,7 +72,16 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // A hospedagem limita a 120 processos simultâneos (NPROC). Limita o build
+  // a um único worker para não estourar esse teto.
+  experimental: {
+    cpus: 1,
+    workerThreads: false,
+    staticGenerationMaxConcurrency: 1,
+    webpackBuildWorker: false,
+    parallelServerCompiles: false,
+    parallelServerBuildTraces: false,
+  },
   images: {
     // A hospedagem não aguenta o processamento sob demanda do Next.js
     // (retorna 503 quando várias imagens são otimizadas ao mesmo tempo).
