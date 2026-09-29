@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -8,17 +7,7 @@ import WppIcon from "@/assets/icons/whatsapp_icon.svg";
 import { sendGTMEvent } from "@next/third-parties/google";
 
 export function WhatsappFloatButton() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    function handleScroll() {
-      setVisible(window.scrollY > window.innerHeight * 0.8);
-    }
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const visible = true;
 
   return (
     <Link
