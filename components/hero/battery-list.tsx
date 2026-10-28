@@ -108,7 +108,7 @@ export function BatteryCard({ battery }: { battery: BatteryBanner }) {
 
           <Link
             target="_blank"
-            href="https://wa.me/55092993780593"
+            href="https://wa.me/5592993780593"
             className="mt-5 w-fit rounded-lg bg-green-secondary px-4 py-2 z-10 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-tertiary"
             onClick={() =>
               sendGTMEvent({

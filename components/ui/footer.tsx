@@ -68,7 +68,7 @@ export function Footer() {
                   <p className="text-xl font-bold uppercase">Whatsapp</p>
                 </div>
                 <Link
-                  href="https://wa.me/55092993780593"
+                  href="https://wa.me/5592993780593"
                   className="flex gap-2 items-center ml-6"
                 >
                   <p className="font-light">092</p>

@@ -11,7 +11,7 @@ export function WhatsappFloatButton() {
 
   return (
     <Link
-      href="https://wa.me/55092993780593"
+      href="https://wa.me/5592993780593"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco no Whatsapp"
