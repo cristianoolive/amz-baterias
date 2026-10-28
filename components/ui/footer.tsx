@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 import { Container } from "./container";
 
@@ -54,7 +57,7 @@ export function Footer() {
                   <p className="text-xl font-bold uppercase">Contato</p>
                 </div>
                 <Link
-                  href="tel:+55092992352795"
+                  href="tel:+5592992352795"
                   className="flex gap-2 items-center ml-6"
                 >
                   <p className="font-light">092</p>
@@ -69,7 +72,18 @@ export function Footer() {
                 </div>
                 <Link
                   href="https://wa.me/5592993780593"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex gap-2 items-center ml-6"
+                  onClick={() =>
+                    sendGTMEvent({
+                      event: "whatsapp_click",
+                      event_category: "engagement",
+                      event_label: "footer",
+                      value: 1,
+                      currency: "BRL",
+                    })
+                  }
                 >
                   <p className="font-light">092</p>
                   <p className="text-2xl">99378-0593</p>
