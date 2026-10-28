@@ -33,32 +33,39 @@ const ContentSecurityPolicy = `
 
   connect-src
     'self'
-    https://www.google-analytics.com
-    https://ssl.google-analytics.com
-    https://www.googletagmanager.com
+    https://*.google-analytics.com
+    https://*.analytics.google.com
+    https://analytics.google.com
+    https://*.googletagmanager.com
+    https://www.google.com
+    https://google.com
     https://www.googleadservices.com
-    https://googleads.g.doubleclick.net
+    https://*.g.doubleclick.net
+    https://www.facebook.com
     https://connect.facebook.net
     https://cdnjs.cloudflare.com;
 
   img-src
     'self'
-    https://www.googletagmanager.com
-    https://tagmanager.google.com
-    https://ssl.gstatic.com
-    https://www.gstatic.com
-    https://www.google-analytics.com
-    https://googleads.g.doubleclick.net
+    data:
+    https://*.google-analytics.com
+    https://*.analytics.google.com
+    https://*.googletagmanager.com
     https://www.google.com
     https://google.com
+    https://www.google.com.br
+    https://*.g.doubleclick.net
     https://www.facebook.com
+    https://ssl.gstatic.com
+    https://www.gstatic.com
     https://fonts.gstatic.com
-    data:;
+    https://tagmanager.google.com;
 
   frame-src
     'self'
     https://www.googletagmanager.com
     https://tagmanager.google.com
+    https://td.doubleclick.net
     https://bid.g.doubleclick.net
     https://www.google.com
     https://b190ba2cb2404ee5a665c186c36bc2e1.elf.site;
