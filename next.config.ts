@@ -96,6 +96,16 @@ const nextConfig: NextConfig = {
     // As imagens já são pré-otimizadas manualmente antes do build.
     unoptimized: true,
   },
+  redirects: async () => {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.bateriasamz.com.br" }],
+        destination: "https://bateriasamz.com.br/:path*",
+        permanent: true,
+      },
+    ];
+  },
   headers: async () => {
     return [
       {

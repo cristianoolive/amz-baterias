@@ -187,7 +187,7 @@ export function Navbar({ links, className }: NavbarProps) {
             >
               <Image
                 src={Logo}
-                alt="Logo"
+                alt="AMZ Peças e Baterias"
                 className="h-full w-full object-contain rounded-md"
               />
             </motion.div>

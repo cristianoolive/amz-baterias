@@ -22,12 +22,12 @@ export function PaymentMethods() {
         <div className="mt-10 flex flex-col items-center gap-12 max-w-lg">
           <Image
             src={PaymentCards}
-            alt="Payment Cards"
+            alt="Cartões aceitos: Visa, Mastercard, Elo, Hipercard e American Express em até 10x sem juros"
             className="rounded-xl"
           />
           <Image
             src={PaymentBemol}
-            alt="Payment Bemol"
+            alt="Pagamento pelo Crediário Bemol"
             className="rounded-xl"
           />
         </div>

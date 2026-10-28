@@ -54,7 +54,7 @@ export function Introduction() {
             </h2>
             <BrandsMarquee />
             <MotoBrandsMarquee />
-            <Image src={Batteries} alt="Baterias" className="mx-auto mt-6" />
+            <Image src={Batteries} alt="Baterias Pioneiro, Moura e Heliar com entrega e instalação grátis em Manaus" className="mx-auto mt-6" />
           </div>
 
           <div className=" flex w-full flex-col items-center">
@@ -122,7 +122,7 @@ export function Introduction() {
           <div className="flex flex-col items-center justify-center">
             <Image
               src={Batteries2}
-              alt="Baterias"
+              alt="Baterias Moura e Heliar com entrega e instalação grátis em Manaus"
               className="ml-10 px-12 object-contain"
             />
             <div className="flex items-center space-x-1">

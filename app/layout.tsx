@@ -22,9 +22,66 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://bateriasamz.com.br";
+const title = "Bateria em Manaus com Entrega e Instalação Grátis | AMZ Peças & Baterias";
+const description =
+  "Baterias Moura e Heliar em Manaus com entrega e instalação grátis em até 40 minutos. Pague em até 10x sem juros no cartão ou no Crediário Bemol.";
+
 export const metadata: Metadata = {
-  title: "AMZ Peças & Baterias",
-  description: "Loja de baterias automotivas e acessórios",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "/",
+    siteName: "AMZ Peças & Baterias",
+    title,
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+};
+
+// Dados da loja para o Google (Maps, resultados locais) e assistentes de IA.
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AutoPartsStore",
+  name: "AMZ Peças & Baterias",
+  url: siteUrl,
+  telephone: "+55-92-99378-0593",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Av. Dublin, 1504 - Planalto",
+    addressLocality: "Manaus",
+    addressRegion: "AM",
+    postalCode: "69045-080",
+    addressCountry: "BR",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "07:00",
+      closes: "21:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday", "Sunday"],
+      opens: "07:00",
+      closes: "20:00",
+    },
+  ],
+  areaServed: ["Manaus", "Amazonas"],
+  paymentAccepted: "Cartão de crédito em até 10x sem juros, Crediário Bemol",
+  sameAs: [
+    "https://www.instagram.com/amzautopecas",
+    "https://www.facebook.com/841397619046428",
+  ],
 };
 
 export default function RootLayout({
@@ -34,7 +91,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <head />
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd),
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
         {/** * Google Tag Manager */}
         <GoogleTagManager gtmId="GTM-MKPJM4R6" />

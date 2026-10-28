@@ -40,11 +40,11 @@ export function Footer() {
 
           <div className="mt-6 w-full  flex justify-center gap-6 font-secondary md:hidden">
             <Link href="https://www.instagram.com/amzautopecas" target='_blank' className="flex gap-1 items-center">
-              <Image src={InstagramIcon} alt="ícone do Instagram" />
+              <Image src={InstagramIcon} alt="" />
               <span>Instagram</span>
             </Link>
             <Link href="https://www.facebook.com/841397619046428" target='_blank' className="flex gap-1 items-center">
-              <Image src={FacebookIcon} alt="ícone do Facebook" />
+              <Image src={FacebookIcon} alt="" />
               <span>Facebook</span>
             </Link>
           </div>
@@ -53,7 +53,7 @@ export function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-secondary w-full mt-12 px-4">
               <div className="w-full flex flex-col gap-2">
                 <div className="flex gap-1 items-center">
-                  <Image src={PhoneIcon} alt="ícone do telefone" />
+                  <Image src={PhoneIcon} alt="" />
                   <p className="text-xl font-bold uppercase">Contato</p>
                 </div>
                 <Link
@@ -67,7 +67,7 @@ export function Footer() {
 
               <div className="w-full flex flex-col gap-2">
                 <div className="flex gap-1 items-center">
-                  <Image src={PhoneIcon} alt="ícone do telefone" />
+                  <Image src={PhoneIcon} alt="" />
                   <p className="text-xl font-bold uppercase">Whatsapp</p>
                 </div>
                 <Link
@@ -92,7 +92,7 @@ export function Footer() {
 
               <div className="w-full flex flex-col gap-2">
                 <div className="flex gap-1 items-center">
-                  <Image src={LocalizationIcon} alt="ícone de localização" />
+                  <Image src={LocalizationIcon} alt="" />
                   <p className="text-xl font-bold uppercase">Localização</p>
                 </div>
                 <div className=" ml-6 font-light">
@@ -103,7 +103,7 @@ export function Footer() {
 
               <div className="w-full flex flex-col gap-2">
                 <div className="flex gap-1 items-center">
-                  <Image src={CalendarIcon} alt="ícone de calendário" />
+                  <Image src={CalendarIcon} alt="" />
                   <p className="text-xl font-bold uppercase">
                     Horário de Funcionamento
                   </p>
@@ -125,11 +125,11 @@ export function Footer() {
               <hr className="w-full text-green-primary" />
               <div className="w-full items-center justify-start gap-8 flex mt-4">
                 <Link href="https://www.instagram.com/amzautopecas" target='_blank' className="flex gap-3 items-center">
-                  <Image src={InstagramIcon} alt="ícone do Instagram" />
+                  <Image src={InstagramIcon} alt="" />
                   <span>Instagram</span>
                 </Link>
                 <Link href="https://www.facebook.com/841397619046428" target='_blank' className="flex gap-3 items-center">
-                  <Image src={FacebookIcon} alt="ícone do Facebook" />
+                  <Image src={FacebookIcon} alt="" />
                   <span>Facebook</span>
                 </Link>
               </div>

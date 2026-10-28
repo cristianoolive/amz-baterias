@@ -9,7 +9,7 @@ export function StartStopBatteries() {
         <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-12">
           <Image
             src={Batteries}
-            alt="Baterias Start-Stop"
+            alt="Baterias Start-Stop AGM e EFB para carros com sistema start-stop"
             className="object-contain max-w-sm"
           />
           <div className="max-w-lg">
