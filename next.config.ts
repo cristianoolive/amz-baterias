@@ -40,7 +40,7 @@ const ContentSecurityPolicy = `
     https://www.google.com
     https://google.com
     https://www.googleadservices.com
-    https://*.g.doubleclick.net
+    https://*.doubleclick.net
     https://www.facebook.com
     https://connect.facebook.net
     https://cdnjs.cloudflare.com;
@@ -54,7 +54,7 @@ const ContentSecurityPolicy = `
     https://www.google.com
     https://google.com
     https://www.google.com.br
-    https://*.g.doubleclick.net
+    https://*.doubleclick.net
     https://www.facebook.com
     https://ssl.gstatic.com
     https://www.gstatic.com
@@ -68,6 +68,7 @@ const ContentSecurityPolicy = `
     https://td.doubleclick.net
     https://bid.g.doubleclick.net
     https://www.google.com
+    https://www.facebook.com
     https://b190ba2cb2404ee5a665c186c36bc2e1.elf.site;
 `;
 
