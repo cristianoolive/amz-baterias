@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 import { Faq } from "@/components/hero/faq";
+import { CarBrandLinks } from "@/components/ui/car-brand-links";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { SegmentLinks } from "@/components/ui/segment-links";
@@ -110,6 +111,7 @@ export default async function SegmentPage({ params }: { params: Params }) {
         </Container>
       </section>
 
+      {segment.slug === "carro" && <CarBrandLinks />}
       <SegmentLinks current={segment.slug} />
       <Faq items={FAQ.slice(0, 6)} />
     </main>
