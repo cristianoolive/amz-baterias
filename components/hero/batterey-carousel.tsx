@@ -1,6 +1,7 @@
 import { Carousel } from "../ui/carousel";
 
 import { Container } from "@/components/ui/container";
+import { BRANDS } from "@/lib/content";
 
 import Heliar from "@/assets/hero/images/battery-carrousel/Heliar.png";
 import Pioneiro from "@/assets/hero/images/battery-carrousel/Pioneiro.png";
@@ -38,6 +39,11 @@ export function BatteryCarousel() {
             imageAreaClassName="h-20 sm:h-28 md:h-36"
           />
         </div>
+        <p className="mx-auto mt-4 max-w-2xl text-center font-secondary text-black/70">
+          Trabalhamos com baterias {BRANDS.slice(0, -1).join(", ")} e{" "}
+          {BRANDS[BRANDS.length - 1]}, incluindo as linhas EFB e AGM para
+          carros com sistema start-stop.
+        </p>
       </Container>
     </section>
   );

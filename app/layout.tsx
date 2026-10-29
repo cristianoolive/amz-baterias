@@ -76,7 +76,7 @@ const localBusinessJsonLd = {
       closes: "20:00",
     },
   ],
-  areaServed: ["Manaus", "Amazonas"],
+  areaServed: ["Manaus", "Iranduba", "Manacapuru", "Rio Preto da Eva", "Amazonas"],
   paymentAccepted: "Cartão de crédito em até 10x sem juros, Crediário Bemol",
   sameAs: [
     "https://www.instagram.com/amzautopecas",
@@ -122,9 +122,9 @@ export default function RootLayout({
         <div className="min-h-dvh">
           <Navbar
             links={[
-              { href: "#baterias", label: "Baterias" },
-              { href: "#entrega", label: "Entrega" },
-              { href: "#contato", label: "Contato" },
+              { href: "/#baterias", label: "Baterias" },
+              { href: "/#entrega", label: "Entrega" },
+              { href: "/#contato", label: "Contato" },
             ]}
           />
           {children}

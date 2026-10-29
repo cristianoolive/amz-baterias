@@ -17,6 +17,7 @@ export interface BatteryBanner {
   alt: string;
   desc: string;
   title: string;
+  href: string;
   img: StaticImageData;
 }
 
@@ -24,36 +25,42 @@ const BATTERIES: BatteryBanner[] = [
   {
     desc: "Baterias de Carro e Moto",
     title: "Baterias Automotivas",
+    href: "/baterias/carro",
     alt: "Bateria Automotiva",
     img: Automotiva,
   },
   {
     desc: "Baterias para Caminhões",
     title: "Baterias para Caminhões",
+    href: "/baterias/caminhao",
     alt: "Bateria para Caminhão",
     img: Pesada,
   },
   {
     desc: "Baterias para Lanchas e Jet Skis",
     title: "Baterias Náuticas",
+    href: "/baterias/nautica",
     alt: "Bateria Náutica",
     img: Nautica,
   },
   {
     desc: "Baterias Start Stop AGM e EFB",
     title: "Baterias AGM e EFB",
+    href: "/baterias/start-stop",
     alt: "Bateria AGM e EFB",
     img: AgmEEfb,
   },
   {
     desc: "Baterias para Nobreaks",
     title: "Baterias para Nobreaks",
+    href: "/baterias/nobreak-e-solar",
     alt: "Bateria para Nobreak",
     img: Nobreak,
   },
   {
     desc: "Baterias Solar e Estacionárias",
     title: "Baterias Estacionárias",
+    href: "/baterias/nobreak-e-solar",
     alt: "Bateria Estacionária",
     img: Estacionaria,
   },
@@ -121,6 +128,13 @@ export function BatteryCard({ battery }: { battery: BatteryBanner }) {
             }
           >
             Pedir agora
+          </Link>
+
+          <Link
+            href={battery.href}
+            className="mt-3 text-sm font-secondary text-green-tertiary underline underline-offset-4 hover:text-green-secondary"
+          >
+            Saiba mais
           </Link>
         </div>
       </article>
