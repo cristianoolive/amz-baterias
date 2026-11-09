@@ -2,12 +2,12 @@ import { Carousel } from "../ui/carousel";
 
 import { Container } from "@/components/ui/container";
 
-import AlternadorGol from "@/assets/hero/images/parts-carrousel/alternador-gol.jpg";
-import AlternadorUno from "@/assets/hero/images/parts-carrousel/alternador-uno-palio.jpg";
-import MotorArranque from "@/assets/hero/images/parts-carrousel/motor-de-arranque.jpg";
-import ReguladorVoltagem from "@/assets/hero/images/parts-carrousel/regulador-de-voltagem.jpg";
-import BobinaIgnicaoDelphi from "@/assets/hero/images/parts-carrousel/bobina-de-ignicao-delphi.jpg";
-import TensorDoAlternador from "@/assets/hero/images/parts-carrousel/tensor-do-alternador.jpeg";
+import AlternadorGol from "@/assets/hero/images/parts-carrousel/alternador-gol.webp";
+import AlternadorUno from "@/assets/hero/images/parts-carrousel/alternador-uno-palio.webp";
+import MotorArranque from "@/assets/hero/images/parts-carrousel/motor-de-arranque.webp";
+import ReguladorVoltagem from "@/assets/hero/images/parts-carrousel/regulador-de-voltagem.webp";
+import BobinaIgnicaoDelphi from "@/assets/hero/images/parts-carrousel/bobina-de-ignicao-delphi.webp";
+import TensorDoAlternador from "@/assets/hero/images/parts-carrousel/tensor-do-alternador.webp";
 
 export function PartsCarousel() {
   return (

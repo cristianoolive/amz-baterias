@@ -14,7 +14,7 @@ import {
 } from "framer-motion";
 
 import { Container } from "@/components/ui/container";
-import Logo from "@/assets/icons/amz-logo-novo.png";
+import Logo from "@/assets/icons/amz-logo-novo.webp";
 
 export type NavbarLink = {
   href: string;

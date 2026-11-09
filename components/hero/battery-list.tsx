@@ -5,12 +5,12 @@ import Link from "next/link";
 
 import { Container } from "@/components/ui/container";
 
-import AgmEEfb from "@/assets/hero/images/battery-types/agm_e_efb.png";
-import Automotiva from "@/assets/hero/images/battery-types/automotiva.png";
-import Estacionaria from "@/assets/hero/images/battery-types/estacionaria.png";
-import Nautica from "@/assets/hero/images/battery-types/nautica.png";
-import Nobreak from "@/assets/hero/images/battery-types/nobreak.png";
-import Pesada from "@/assets/hero/images/battery-types/pesada.png";
+import AgmEEfb from "@/assets/hero/images/battery-types/agm_e_efb.webp";
+import Automotiva from "@/assets/hero/images/battery-types/automotiva.webp";
+import Estacionaria from "@/assets/hero/images/battery-types/estacionaria.webp";
+import Nautica from "@/assets/hero/images/battery-types/nautica.webp";
+import Nobreak from "@/assets/hero/images/battery-types/nobreak.webp";
+import Pesada from "@/assets/hero/images/battery-types/pesada.webp";
 import { sendGTMEvent } from "@next/third-parties/google";
 
 export interface BatteryBanner {

@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { Container } from "@/components/ui/container";
 import { WhatsappCta } from "@/components/ui/whatsapp-cta";
 
-import Store from "@/assets/hero/images/introduction/home.jpg";
+import Store from "@/assets/hero/images/introduction/home.webp";
 
 type PageHeroProps = {
   title: ReactNode;

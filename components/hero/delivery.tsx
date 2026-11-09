@@ -2,9 +2,9 @@ import Image, { StaticImageData } from "next/image";
 
 import { Container } from "@/components/ui/container";
 
-import Delivery1 from "@/assets/hero/images/delivery-steps/delivery1.jpg";
-import Delivery2 from "@/assets/hero/images/delivery-steps/delivery2.png";
-import Delivery3 from "@/assets/hero/images/delivery-steps/delivery3.png";
+import Delivery1 from "@/assets/hero/images/delivery-steps/delivery1.webp";
+import Delivery2 from "@/assets/hero/images/delivery-steps/delivery2.webp";
+import Delivery3 from "@/assets/hero/images/delivery-steps/delivery3.webp";
 
 interface DeliverySteps {
   step: number;

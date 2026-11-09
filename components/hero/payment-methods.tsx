@@ -4,8 +4,8 @@ import Image from "next/image";
 
 import { Container } from "@/components/ui/container";
 
-import PaymentCards from "@/assets/hero/images/payment-methods/payment-cards.png";
-import PaymentBemol from "@/assets/hero/images/payment-methods/bemol.png";
+import PaymentCards from "@/assets/hero/images/payment-methods/payment-cards.webp";
+import PaymentBemol from "@/assets/hero/images/payment-methods/bemol.webp";
 
 import WppIcon from "@/assets/icons/whatsapp_icon.svg";
 import { trackGoogleAdsConversion } from "@/lib/gtag/google-ads-tag";

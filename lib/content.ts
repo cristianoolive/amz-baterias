@@ -1,10 +1,10 @@
 import type { StaticImageData } from "next/image";
 
-import AgmEEfb from "@/assets/hero/images/battery-types/agm_e_efb.png";
-import Automotiva from "@/assets/hero/images/battery-types/automotiva.png";
-import Estacionaria from "@/assets/hero/images/battery-types/estacionaria.png";
-import Nautica from "@/assets/hero/images/battery-types/nautica.png";
-import Pesada from "@/assets/hero/images/battery-types/pesada.png";
+import AgmEEfb from "@/assets/hero/images/battery-types/agm_e_efb.webp";
+import Automotiva from "@/assets/hero/images/battery-types/automotiva.webp";
+import Estacionaria from "@/assets/hero/images/battery-types/estacionaria.webp";
+import Nautica from "@/assets/hero/images/battery-types/nautica.webp";
+import Pesada from "@/assets/hero/images/battery-types/pesada.webp";
 
 export const SITE_URL = "https://bateriasamz.com.br";
 export const WHATSAPP_URL = "https://wa.me/5592993780593";

@@ -3,14 +3,14 @@ import { Carousel } from "../ui/carousel";
 import { Container } from "@/components/ui/container";
 import { BRANDS } from "@/lib/content";
 
-import Heliar from "@/assets/hero/images/battery-carrousel/Heliar.png";
-import Pioneiro from "@/assets/hero/images/battery-carrousel/Pioneiro.png";
-import OnBat from "@/assets/hero/images/battery-carrousel/OnBat.png";
-import America from "@/assets/hero/images/battery-carrousel/America.png";
-import Efb from "@/assets/hero/images/battery-carrousel/EFB.png";
-import Agm from "@/assets/hero/images/battery-carrousel/AGM.png";
-import Zetta from "@/assets/hero/images/battery-carrousel/Zetta.png";
-import Bosch from "@/assets/hero/images/battery-carrousel/Bosch.png";
+import Heliar from "@/assets/hero/images/battery-carrousel/Heliar.webp";
+import Pioneiro from "@/assets/hero/images/battery-carrousel/Pioneiro.webp";
+import OnBat from "@/assets/hero/images/battery-carrousel/OnBat.webp";
+import America from "@/assets/hero/images/battery-carrousel/America.webp";
+import Efb from "@/assets/hero/images/battery-carrousel/EFB.webp";
+import Agm from "@/assets/hero/images/battery-carrousel/AGM.webp";
+import Zetta from "@/assets/hero/images/battery-carrousel/Zetta.webp";
+import Bosch from "@/assets/hero/images/battery-carrousel/Bosch.webp";
 
 export function BatteryCarousel() {
   return (

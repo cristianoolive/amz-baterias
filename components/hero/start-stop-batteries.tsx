@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/container";
-import Batteries from "@/assets/hero/images/battery-start-stop/start-stop.png";
+import Batteries from "@/assets/hero/images/battery-start-stop/start-stop.webp";
 
 export function StartStopBatteries() {
   return (

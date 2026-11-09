@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-import Ducati from "@/assets/hero/images/moto-brands/Ducati_red_logo.png";
-import Harley from "@/assets/hero/images/moto-brands/harley.png";
-import Honda from "@/assets/hero/images/moto-brands/honda.png";
-import Kawasaki from "@/assets/hero/images/moto-brands/kawasaki.png";
-import RoyalEnfield from "@/assets/hero/images/moto-brands/royal-enfield.png";
-import Shineray from "@/assets/hero/images/moto-brands/shineray.png";
-import Suzuki from "@/assets/hero/images/moto-brands/suzuki.png";
-import Triumph from "@/assets/hero/images/moto-brands/trumph.png";
-import Yamaha from "@/assets/hero/images/moto-brands/yamaha.png";
+import Ducati from "@/assets/hero/images/moto-brands/Ducati_red_logo.webp";
+import Harley from "@/assets/hero/images/moto-brands/harley.webp";
+import Honda from "@/assets/hero/images/moto-brands/honda.webp";
+import Kawasaki from "@/assets/hero/images/moto-brands/kawasaki.webp";
+import RoyalEnfield from "@/assets/hero/images/moto-brands/royal-enfield.webp";
+import Shineray from "@/assets/hero/images/moto-brands/shineray.webp";
+import Suzuki from "@/assets/hero/images/moto-brands/suzuki.webp";
+import Triumph from "@/assets/hero/images/moto-brands/trumph.webp";
+import Yamaha from "@/assets/hero/images/moto-brands/yamaha.webp";
 
 const MOTO_BRANDS = [
   { src: Honda, alt: "Honda" },
@@ -37,7 +37,6 @@ export function MotoBrandsMarquee() {
             <Image
               src={brand.src}
               alt={`Logo ${brand.alt}`}
-              loading="eager"
               className="h-9 w-auto object-contain sm:h-11"
             />
           </div>

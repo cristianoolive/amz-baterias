@@ -1,26 +1,29 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { preload } from "react-dom";
 
 import { Container } from "@/components/ui/container";
 import { BrandsMarquee } from "@/components/hero/brands-marquee";
 import { MotoBrandsMarquee } from "@/components/hero/moto-brands-marquee";
 
-import Store from "@/assets/hero/images/introduction/home.jpg";
-import Batteries from "@/assets/hero/images/introduction/baterias_home.png";
-import Batteries2 from "@/assets/hero/images/introduction/introduction-photo-2.png";
+import Store from "@/assets/hero/images/introduction/home.webp";
+import Batteries from "@/assets/hero/images/introduction/baterias_home.webp";
+import Batteries2 from "@/assets/hero/images/introduction/introduction-photo-2.webp";
 
-import Elo from "@/assets/hero/images/introduction/elo.png";
-import Visa from "@/assets/hero/images/introduction/visa.png";
-import Hipercard from "@/assets/hero/images/introduction/hipercard.png";
-import Mastercard from "@/assets/hero/images/introduction/mastercard.png";
-import CrediarioBemol from "@/assets/hero/images/introduction/crediario-bemol.png";
-import AmericanExpress from "@/assets/hero/images/introduction/american-express.png";
+import Elo from "@/assets/hero/images/introduction/elo.webp";
+import Visa from "@/assets/hero/images/introduction/visa.webp";
+import Hipercard from "@/assets/hero/images/introduction/hipercard.webp";
+import Mastercard from "@/assets/hero/images/introduction/mastercard.webp";
+import CrediarioBemol from "@/assets/hero/images/introduction/crediario-bemol.webp";
+import AmericanExpress from "@/assets/hero/images/introduction/american-express.webp";
 
 import WppIcon from "@/assets/icons/whatsapp_icon.svg";
 import { sendGTMEvent } from "@next/third-parties/google";
 
 export function Introduction() {
+  // A foto da fachada é o maior elemento da primeira tela (LCP): baixa primeiro.
+  preload(Store.src, { as: "image", fetchPriority: "high" });
   const paymentMethods = [
     { src: Visa, alt: "Visa" },
     { src: Mastercard, alt: "Mastercard" },

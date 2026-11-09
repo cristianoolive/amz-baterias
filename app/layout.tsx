@@ -11,7 +11,7 @@ import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { WhatsappFloatButton } from "@/components/ui/whatsapp-float-button";
 import { CallFloatButton } from "@/components/ui/call-float-button";
-import Logo from "@/assets/icons/amz-logo-novo.png";
+import Logo from "@/assets/icons/amz-logo-novo.webp";
 
 const inter = Inter({
   variable: "--font-primary",
