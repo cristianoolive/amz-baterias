@@ -20,7 +20,8 @@ models=[]
 for r in rows[1:]:
     if not r.get('B'): continue
     brand=BRAND_NAMES.get(r['A'].strip(), r['A'].strip())
-    split=lambda s:[x.strip() for x in s.split('/') if x.strip()]
+    # separa por '/' só fora de parênteses: "M45 (FD/FE)" é um código só
+    split=lambda s:[x.strip() for x in re.split(r'/(?![^()]*\))', s) if x.strip()]
     models.append(dict(brand=brand, brandSlug=slug(brand), model=r['B'].strip(), slug=slug(r['B']),
         detail=r['C'].strip(), specs=r['D'].strip(), moura=split(r['E']), heliar=split(r['F']), pioneiro=split(r['G'])))
 seen=set()

@@ -1026,8 +1026,7 @@ export const CAR_MODELS: CarModel[] = [
     "specs": "40-45Ah SLI",
     "moura": [
       "M40S",
-      "M45 (FD",
-      "FE)"
+      "M45 (FD/FE)"
     ],
     "heliar": [
       "HF40",

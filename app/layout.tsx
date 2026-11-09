@@ -11,6 +11,7 @@ import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { WhatsappFloatButton } from "@/components/ui/whatsapp-float-button";
 import { CallFloatButton } from "@/components/ui/call-float-button";
+import Logo from "@/assets/icons/amz-logo-novo.png";
 
 const inter = Inter({
   variable: "--font-primary",
@@ -48,12 +49,32 @@ export const metadata: Metadata = {
 };
 
 // Dados da loja para o Google (Maps, resultados locais) e assistentes de IA.
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
+const localBusiness = {
   "@type": "AutoPartsStore",
+  "@id": `${siteUrl}/#loja`,
   name: "AMZ Peças & Baterias",
+  alternateName: "AMZ Autopeças",
   url: siteUrl,
+  logo: `${siteUrl}${Logo.src}`,
+  image: `${siteUrl}/opengraph-image`,
   telephone: "+55-92-99378-0593",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    telephone: "+55-92-99378-0593",
+    availableLanguage: "pt-BR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -3.06449,
+    longitude: -60.05824,
+  },
+  // Ficha do Google Maps (mesmo local do mapa incorporado no rodapé).
+  hasMap: "https://www.google.com/maps?cid=7084582176863803669",
+  brand: [
+    { "@type": "Brand", name: "Moura" },
+    { "@type": "Brand", name: "Heliar" },
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Av. Dublin, 1504 - Planalto",
@@ -81,6 +102,23 @@ const localBusinessJsonLd = {
   sameAs: [
     "https://www.instagram.com/amzautopecas",
     "https://www.facebook.com/841397619046428",
+    "https://www.google.com/maps?cid=7084582176863803669",
+  ],
+};
+
+// A loja e o site num grafo só, com @id para as outras páginas apontarem.
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    localBusiness,
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#site`,
+      url: siteUrl,
+      name: "AMZ Peças & Baterias",
+      inLanguage: "pt-BR",
+      publisher: { "@id": `${siteUrl}/#loja` },
+    },
   ],
 };
 

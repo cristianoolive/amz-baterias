@@ -70,6 +70,8 @@ const ContentSecurityPolicy = `
     https://www.google.com
     https://www.facebook.com
     https://b190ba2cb2404ee5a665c186c36bc2e1.elf.site;
+
+  frame-ancestors 'self';
 `;
 
 const securityHeaders = [
@@ -77,6 +79,12 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: ContentSecurityPolicy.replace(/\n/g, ""),
   },
+  // Força HTTPS no navegador por 1 ano (sem includeSubDomains por segurança).
+  { key: "Strict-Transport-Security", value: "max-age=31536000" },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
 ];
 
 const nextConfig: NextConfig = {

@@ -42,10 +42,11 @@ export function Introduction() {
       <Container className="relative z-10 flex h-full w-full flex-col items-center">
         <div className="w-full md:hidden">
           <div className="w-full">
-            <h1 className="font-secondary text-5xl font-bold text-white sm:text-5xl lg:text-6xl">
+            {/* Cópia do título só para celular; o h1 da página fica na versão desktop abaixo. */}
+            <p className="font-secondary text-5xl font-bold text-white sm:text-5xl lg:text-6xl">
               Precisando de <span className="text-green-primary">Bateria</span>{" "}
               para seu veículo?
-            </h1>
+            </p>
             <h2 className="mt-5 font-secondary text-2xl text-white/90 sm:text-2xl">
               Entrega e instalação{" "}
               <span className="bg-green-secondary px-1">Grátis</span> em toda{" "}

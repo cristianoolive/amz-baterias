@@ -73,7 +73,7 @@ export const FAQ: FaqItem[] = [
   {
     question: "Qual bateria serve no Onix, no HB20 e na Strada?",
     answer:
-      "Temos bateria para Onix, HB20, Strada e para todas as marcas de carro. A amperagem certa muda conforme o ano e o motor, então mande o modelo e o ano do veículo no WhatsApp que indicamos a bateria ideal e o preço.",
+      "Onix e Onix Plus usam bateria de 50 a 60Ah (Moura M50ED ou M60GD). O HB20 usa 45 a 50Ah SLI. A Strada usa 45 a 50Ah SLI, e a versão Turbo com start-stop usa 60Ah EFB (Moura ME60AD). A amperagem exata muda conforme o ano e o motor, então mande o modelo e o ano do veículo no WhatsApp que confirmamos a bateria ideal e o preço.",
   },
   {
     question: "Quais marcas de bateria vocês vendem?",

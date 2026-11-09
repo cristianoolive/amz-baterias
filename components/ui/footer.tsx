@@ -150,7 +150,7 @@ export function Footer() {
       </Container>
       <div className="text-center mt-6 bg-green-tertiary font-secondary py-2 text-white">
         <p className="text-sm">
-          © 2024 AMZ Autopeças. Todos os direitos reservados.
+          © {new Date().getFullYear()} AMZ Peças & Baterias. Todos os direitos reservados.
         </p>
         {/* <p className="text-sm">
           Site desenvolvido por{" "}

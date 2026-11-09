@@ -79,6 +79,16 @@ export default async function CarModelPage({ params }: { params: Params }) {
   const jsonLd = [
     {
       "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${SITE_URL}${carModelPath(m)}#pagina`,
+      url: `${SITE_URL}${carModelPath(m)}`,
+      name: `Bateria do ${name} em Manaus`,
+      inLanguage: "pt-BR",
+      isPartOf: { "@id": `${SITE_URL}/#site` },
+      about: { "@id": `${SITE_URL}/#loja` },
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Início", item: SITE_URL },

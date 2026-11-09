@@ -23,7 +23,7 @@ export function CallFloatButton() {
   return (
     <Link
       href="tel:+5592993780593"
-      aria-label="Ligar para a AMZ Autopeças"
+      aria-label="Ligar para a AMZ Peças & Baterias"
       onClick={() =>
         sendGTMEvent({
           event: "phone_click",
