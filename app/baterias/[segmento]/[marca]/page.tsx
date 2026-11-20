@@ -70,6 +70,7 @@ export default async function CarBrandPage({ params }: { params: Params }) {
         }
         subtitle={`Bateria certa para o seu ${brand.name}, com entrega e instalação grátis em até 40 minutos.`}
         eventLabel={`marca_${brand.slug}`}
+        message={`Olá! Vim pelo site da AMZ Peças & Baterias e gostaria de um orçamento de bateria para ${brand.name}.`}
       />
 
       <section className="w-full bg-[#EDEFEB] py-12">

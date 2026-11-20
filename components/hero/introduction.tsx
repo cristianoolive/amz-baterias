@@ -20,6 +20,7 @@ import AmericanExpress from "@/assets/hero/images/introduction/american-express.
 
 import WppIcon from "@/assets/icons/whatsapp_icon.svg";
 import { sendGTMEvent } from "@next/third-parties/google";
+import { WHATSAPP_URL } from "@/lib/content";
 
 export function Introduction() {
   // A foto da fachada é o maior elemento da primeira tela (LCP): baixa primeiro.
@@ -66,7 +67,7 @@ export function Introduction() {
               <div className="absolute h-full w-1/2 top-0 animate-ping rounded-md bg-green-secondary opacity-75" />
 
               <Link
-                href="https://wa.me/5592993780593"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative flex w-fit items-center justify-center rounded-md bg-green-secondary px-6 py-2 text-2xl text-white transition-colors hover:bg-green-tertiary"
@@ -142,7 +143,7 @@ export function Introduction() {
             <div className="relative mt-5 justify-center items-center flex">
               <div className="absolute h-full w-3/4 top-0 animate-ping rounded-md bg-green-secondary opacity-75" />
               <Link
-                href="https://wa.me/5592993780593"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" relative z-10 flex w-fit items-center justify-center rounded-md bg-green-secondary px-6 py-2 text-2xl text-white transition-colors hover:bg-green-tertiary"

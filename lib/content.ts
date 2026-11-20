@@ -7,7 +7,16 @@ import Nautica from "@/assets/hero/images/battery-types/nautica.webp";
 import Pesada from "@/assets/hero/images/battery-types/pesada.webp";
 
 export const SITE_URL = "https://bateriasamz.com.br";
-export const WHATSAPP_URL = "https://wa.me/5592993780593";
+// Mensagem que já vem escrita no WhatsApp, para o atendimento saber que o
+// cliente veio do site.
+export const WHATSAPP_MESSAGE =
+  "Olá! Vim pelo site da AMZ Peças & Baterias e gostaria de um orçamento de bateria.";
+
+export function whatsappUrl(message = WHATSAPP_MESSAGE) {
+  return `https://wa.me/5592993780593?text=${encodeURIComponent(message)}`;
+}
+
+export const WHATSAPP_URL = whatsappUrl();
 
 export const BRANDS = [
   "Moura",

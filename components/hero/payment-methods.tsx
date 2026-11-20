@@ -10,6 +10,7 @@ import PaymentBemol from "@/assets/hero/images/payment-methods/bemol.webp";
 import WppIcon from "@/assets/icons/whatsapp_icon.svg";
 import { trackGoogleAdsConversion } from "@/lib/gtag/google-ads-tag";
 import { sendGTMEvent } from "@next/third-parties/google";
+import { WHATSAPP_URL } from "@/lib/content";
 
 export function PaymentMethods() {
   return (
@@ -40,7 +41,7 @@ export function PaymentMethods() {
             <div className="absolute h-full w-1/2 md:w-1/4 top-0 animate-ping rounded-md bg-green-secondary opacity-75" />
 
             <Link
-              href="https://wa.me/5592993780593"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="relative flex w-fit items-center justify-center rounded-xl bg-green-secondary px-6 py-2 text-2xl text-white transition-colors hover:bg-green-tertiary"

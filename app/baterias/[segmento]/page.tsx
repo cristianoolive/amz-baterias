@@ -12,6 +12,15 @@ import { BRANDS, FAQ, SEGMENTS, SITE_URL } from "@/lib/content";
 
 type Params = Promise<{ segmento: string }>;
 
+const MESSAGE_TOPIC: Record<string, string> = {
+  carro: "de carro",
+  moto: "de moto",
+  caminhao: "para caminhão",
+  nautica: "náutica",
+  "start-stop": "start-stop (EFB ou AGM)",
+  "nobreak-e-solar": "estacionária (nobreak ou solar)",
+};
+
 export function generateStaticParams() {
   return SEGMENTS.map((s) => ({ segmento: s.slug }));
 }
@@ -70,6 +79,7 @@ export default async function SegmentPage({ params }: { params: Params }) {
         title={segment.heading}
         subtitle={segment.intro}
         eventLabel={`segmento_${segment.slug}`}
+        message={`Olá! Vim pelo site da AMZ Peças & Baterias e gostaria de um orçamento de bateria ${MESSAGE_TOPIC[segment.slug] ?? ""}.`}
       />
 
       <section className="w-full py-12">

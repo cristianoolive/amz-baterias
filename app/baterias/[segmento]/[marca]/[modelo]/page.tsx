@@ -123,6 +123,7 @@ export default async function CarModelPage({ params }: { params: Params }) {
         }
         subtitle={`Entrega e instalação grátis da bateria do ${m.model} em até 40 minutos, inclusive à noite e no fim de semana.`}
         eventLabel={`modelo_${m.brandSlug}_${m.slug}`}
+        message={`Olá! Vim pelo site da AMZ Peças & Baterias e gostaria de um orçamento de bateria para o ${name}.`}
       />
 
       <section className="w-full py-12">

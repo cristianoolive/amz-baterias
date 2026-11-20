@@ -5,13 +5,14 @@ import Image from "next/image";
 
 import WppIcon from "@/assets/icons/whatsapp_icon.svg";
 import { sendGTMEvent } from "@next/third-parties/google";
+import { WHATSAPP_URL } from "@/lib/content";
 
 export function WhatsappFloatButton() {
   const visible = true;
 
   return (
     <Link
-      href="https://wa.me/5592993780593"
+      href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco no Whatsapp"

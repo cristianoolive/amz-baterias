@@ -9,10 +9,11 @@ type PageHeroProps = {
   title: ReactNode;
   subtitle: string;
   eventLabel: string;
+  message?: string;
 };
 
 // Mesmo topo da home: foto da loja escurecida com título em destaque.
-export function PageHero({ title, subtitle, eventLabel }: PageHeroProps) {
+export function PageHero({ title, subtitle, eventLabel, message }: PageHeroProps) {
   return (
     <section className="relative w-full overflow-hidden pt-52 pb-16">
       <div
@@ -29,7 +30,7 @@ export function PageHero({ title, subtitle, eventLabel }: PageHeroProps) {
         <p className="mt-5 max-w-2xl font-secondary text-xl text-white/90 sm:text-2xl">
           {subtitle}
         </p>
-        <WhatsappCta eventLabel={eventLabel} className="mt-8" />
+        <WhatsappCta eventLabel={eventLabel} message={message} className="mt-8" />
       </Container>
     </section>
   );

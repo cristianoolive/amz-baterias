@@ -64,6 +64,7 @@ export default function InteriorPage() {
         }
         subtitle="Mandamos sua bateria de Manaus para o interior pelo barco da sua preferência."
         eventLabel="interior"
+        message="Olá! Vim pelo site da AMZ Peças & Baterias e gostaria de um orçamento de bateria com envio para o interior."
       />
 
       <section className="w-full bg-[linear-gradient(to_bottom_right,#234718_0%,#489433_29%,#326623_66%,#55AD3B_100%)] p-8">

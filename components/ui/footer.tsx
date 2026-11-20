@@ -11,6 +11,7 @@ import CalendarIcon from "@/assets/icons/calendar-icon.svg";
 import FacebookIcon from "@/assets/icons/facebook-icon.svg";
 import InstagramIcon from "@/assets/icons/instagram-icon.svg";
 import LocalizationIcon from "@/assets/icons/localization-icon.svg";
+import { WHATSAPP_URL } from "@/lib/content";
 
 export function Footer() {
   return (
@@ -71,7 +72,7 @@ export function Footer() {
                   <p className="text-xl font-bold uppercase">Whatsapp</p>
                 </div>
                 <Link
-                  href="https://wa.me/5592993780593"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex gap-2 items-center ml-6"

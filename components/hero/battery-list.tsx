@@ -12,6 +12,7 @@ import Nautica from "@/assets/hero/images/battery-types/nautica.webp";
 import Nobreak from "@/assets/hero/images/battery-types/nobreak.webp";
 import Pesada from "@/assets/hero/images/battery-types/pesada.webp";
 import { sendGTMEvent } from "@next/third-parties/google";
+import { WHATSAPP_URL } from "@/lib/content";
 
 export interface BatteryBanner {
   alt: string;
@@ -115,7 +116,7 @@ export function BatteryCard({ battery }: { battery: BatteryBanner }) {
 
           <Link
             target="_blank"
-            href="https://wa.me/5592993780593"
+            href={WHATSAPP_URL}
             className="mt-5 w-fit rounded-lg bg-green-secondary px-4 py-2 z-10 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-green-tertiary"
             onClick={() =>
               sendGTMEvent({
